@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet cdn link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- material icon cdn link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <title>Easy Translator</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Easy Translator</h1>
+        <div class="wrapper">
+
+            <div class="text-input">
+                <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+                <textarea spellcheck="false" class="to-text" placeholder="Translation" readonly disabled></textarea>
+
+                <div class="verified">
+                    <span class="material-icons-sharp">verified_user</span>
+                    <p>Verified</p>
+                </div>
+            </div>
+            <ul class="controls">
+
+                <!-- section Left -->
+                <li class="row from">
+
+                    <div class="icons">
+                        <i id = "from" class="fas fa-volume-up" title="Translate by voice"></i>
+                        <i id = "from" class="fas fa-copy" title="click to copy"></i>
+                    </div>
+                    <select>
+                        <!-- <option value="en-US">English</option>
+                        <option value="hi-IN">Hindi</option>
+                        <option value="en-UK">English</option> -->
+                    </select>
+
+                </li>
+                <!-- section Left ends -->
+
+                <li class="exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                </li>
+
+                <!-- section Right -->
+                <li class="row to">
+
+                    <select>
+                        <!-- <option value="hi-IN">Hindi</option>
+                        <option value="en-UK">English</option>
+                        <option value="en-US">English</option> -->
+                    </select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-volume-up" title="Translate by voice"></i>
+                        <i id="to" class="fas fa-copy" title="click to copy"></i>
+                    </div>
+
+                </li>
+                <!-- section Right ends -->
+            </ul>
+        </div>
+        <button class="btn">Translate Text</button>
+    </div>
+
+
+
+
+
+
+    <!-- list of countries file cdn link -->
+    <script src="./assets/js/countires.js"></script>
+    <!-- js file cdn link -->
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
